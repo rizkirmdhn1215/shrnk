@@ -1,7 +1,7 @@
 import { createClient } from "@/lib/supabase/server"
 import { generateShortSlug, validateSlug } from "@/lib/utils/slug"
 import { type NextRequest, NextResponse } from "next/server"
-import bcrypt from "bcrypt"
+import bcrypt from "bcryptjs"
 
 export async function POST(request: NextRequest) {
   try {
